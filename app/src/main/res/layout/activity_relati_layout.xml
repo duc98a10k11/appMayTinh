@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".RelatiLayout">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvmaytinh"
+        android:textSize="20dp"
+        android:text="Máy tính"
+        android:gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:id="@+id/layout1"
+        android:layout_below="@+id/tvmaytinh"
+        android:orientation="horizontal"
+        tools:ignore="InvalidId">
+
+        <TextView
+            android:id="@+id/tvso1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Số thứ nhất: "
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edso1"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="nhap so thu nhat"
+            android:inputType="numberDecimal"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:id="@+id/layout2"
+        android:layout_below="@+id/layout1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvso2"
+            android:textSize="20dp"
+            android:text="So thu 2:"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edso2"
+            android:hint="nhap so thu 2"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"
+            android:inputType="numberDecimal"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout3"
+        android:layout_below="@+id/layout2"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btcong"
+            android:textSize="20dp"
+            android:text="cộng"
+            android:layout_marginLeft="2dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btTru"
+            android:text="Trừ"
+            android:textSize="20dp"
+            android:layout_marginLeft="2dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btchia"
+            android:textSize="20dp"
+            android:text="Chia"
+            android:layout_marginLeft="2dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnhan"
+            android:text="Nhân"
+            android:textSize="20dp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvketqua"
+        android:layout_below="@+id/layout3"
+        android:textSize="20dp"
+        android:text="Ket qua"
+        android:layout_marginTop="15dp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/tvketqua"
+        android:id="@+id/tvresul"
+        android:gravity="center"/>
+</RelativeLayout>
